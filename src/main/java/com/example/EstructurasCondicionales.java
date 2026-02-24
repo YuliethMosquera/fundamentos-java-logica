@@ -3,7 +3,7 @@ package com.example;
 public class EstructurasCondicionales {
 
     public static void ejemploIf() {
-        int edad = 20;
+        int edad = 18;
 
         if (edad >= 18) {
             System.out.println("Eres mayor de edad.");
@@ -14,13 +14,13 @@ public class EstructurasCondicionales {
         int numero = 7;
 
         if (numero % 2 == 0) {
-            System.out.println("El número es par.");
+            System.out.println("Número par");
         } else {
-            System.out.println("El número es impar.");
+            System.out.println("Número impar");
         }
     }
 
-    public static void ejemploIfElseIf() {
+    public static void ejemploIfElseIfElse() {
         int nota = 85;
 
         if (nota >= 90) {
@@ -33,20 +33,17 @@ public class EstructurasCondicionales {
     }
 
     public static void ejemploSwitch() {
-        int dia = 3;
+        int opcion = 2;
 
-        switch (dia) {
+        switch (opcion) {
             case 1:
-                System.out.println("Lunes");
+                System.out.println("Elegiste opción 1");
                 break;
             case 2:
-                System.out.println("Martes");
-                break;
-            case 3:
-                System.out.println("Miércoles");
+                System.out.println("Elegiste opción 2");
                 break;
             default:
-                System.out.println("Otro día");
+                System.out.println("Opción no válida");
         }
     }
 }

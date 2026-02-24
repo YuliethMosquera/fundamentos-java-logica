@@ -1,51 +1,65 @@
 package com.example;
 
 public class Operadores {
-
-    public static void operadoresAritmeticos() {
+    public static void demostrarAritmeticos() {
         int a = 10;
-        int b = 5;
+        int b = 3;
 
-        System.out.println("SUMA: " + (a + b));
-        System.out.println("RESTA: " + (a - b));
-        System.out.println("MULTIPLICACIÓN: " + (a * b));
-        System.out.println("DIVISIÓN: " + (a / b));
-        System.out.println("MÓDULO: " + (a % b));
+        System.out.println("=== OPERADORES ARITMÉTICOS ===");
+        System.out.println("Suma: " + (a + b));
+        System.out.println("Resta: " + (a - b));
+        System.out.println("Multiplicación: " + (a * b));
+        System.out.println("División: " + (a / b));
+        System.out.println("Módulo: " + (a % b));
     }
+    public static void demostrarIncrementoDecremento() {
+        int x = 5;
 
-    public static void operadoresRelacionales() {
-        int x = 10;
-        int y = 20;
-
-        System.out.println("x > y: " + (x > y));
-        System.out.println("x < y: " + (x < y));
-        System.out.println("x == y: " + (x == y));
-        System.out.println("x != y: " + (x != y));
+        System.out.println("\n=== INCREMENTO / DECREMENTO ===");
+        System.out.println("Valor inicial: " + x);
+        System.out.println("Post-incremento: " + (x++));
+        System.out.println("Después del post: " + x);
+        System.out.println("Pre-incremento: " + (++x));
+        System.out.println("Post-decremento: " + (x--));
     }
+    public static void demostrarRelacionales() {
+        int a = 10;
+        int b = 20;
 
-    public static void operadoresLogicos() {
-        boolean a = true;
-        boolean b = false;
-
-        System.out.println("a && b: " + (a && b));
-        System.out.println("a || b: " + (a || b));
-        System.out.println("!a: " + (!a));
+        System.out.println("\n=== OPERADORES RELACIONALES ===");
+        System.out.println("a > b: " + (a > b));
+        System.out.println("a < b: " + (a < b));
+        System.out.println("a == b: " + (a == b));
+        System.out.println("a != b: " + (a != b));
     }
+    public static void demostrarLogicos() {
+        boolean esMayor = true;
+        boolean tieneLicencia = false;
 
-    public static void incrementoDecremento() {
-        int numero = 5;
-
-        numero++;
-        System.out.println("Incremento: " + numero);
-
-        numero--;
-        System.out.println("Decremento: " + numero);
+        System.out.println("\n=== OPERADORES LÓGICOS ===");
+        System.out.println("Puede conducir: " + (esMayor && tieneLicencia));
+        System.out.println("Tiene permiso especial: " + (esMayor || tieneLicencia));
+        System.out.println("No tiene licencia: " + (!tieneLicencia));
     }
+    public static void demostrarAsignacionCompuesta() {
+        int numero = 10;
 
-    public static void operadorTernario() {
+        System.out.println("\n=== ASIGNACIÓN COMPUESTA ===");
+        numero += 5;
+        System.out.println("+= 5 → " + numero);
+
+        numero *= 2;
+        System.out.println("*= 2 → " + numero);
+
+        numero -= 4;
+        System.out.println("-= 4 → " + numero);
+    }
+    public static void demostrarOperadorTernario() {
         int edad = 18;
 
-        String resultado = (edad >= 18) ? "Mayor de edad" : "Menor de edad";
-        System.out.println(resultado);
+        String mensaje = (edad >= 18) ? "Es mayor de edad" : "Es menor de edad";
+
+        System.out.println("\n=== OPERADOR TERNARIO ===");
+        System.out.println(mensaje);
     }
 }
