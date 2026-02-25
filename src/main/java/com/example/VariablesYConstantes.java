@@ -2,7 +2,7 @@ package com.example;
 
 public class VariablesYConstantes {
 
-    public static void demostrarVariables() {
+    public static void demostrarDeclaracionAsignacion() {
         int edad = 20;
         double altura = 1.65;
         char inicial = 'S';

@@ -21,11 +21,16 @@ public class Operadores {
         System.out.println("Después del post: " + x);
         System.out.println("Pre-incremento: " + (++x));
         System.out.println("Post-decremento: " + (x--));
+         int y = 5;
+        System.out.println("Pre-decremento --y: " + (--y));
+
     }
     public static void demostrarRelacionales() {
-        int a = 10;
-        int b = 20;
 
+        int a = 10, b = 10;
+        System.out.println("a >= b: " + (a >= b));
+        System.out.println("a <= b: " + (a <= b));
+        
         System.out.println("\n=== OPERADORES RELACIONALES ===");
         System.out.println("a > b: " + (a > b));
         System.out.println("a < b: " + (a < b));
@@ -53,6 +58,16 @@ public class Operadores {
 
         numero -= 4;
         System.out.println("-= 4 → " + numero);
+
+        int n = 20;
+        n /= 4;  // n = n / 4
+        System.out.println("n /= 4: " + n);
+
+        n = 20;
+        n %= 3;  // n = n % 3
+        System.out.println("n %= 3: " + n);
+  
+    
     }
     public static void demostrarOperadorTernario() {
         int edad = 18;
@@ -61,5 +76,6 @@ public class Operadores {
 
         System.out.println("\n=== OPERADOR TERNARIO ===");
         System.out.println(mensaje);
+    
     }
 }
