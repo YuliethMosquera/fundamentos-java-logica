@@ -30,6 +30,8 @@ public class Operadores {
         int a = 10, b = 10;
         System.out.println("a >= b: " + (a >= b));
         System.out.println("a <= b: " + (a <= b));
+
+
         
         System.out.println("\n=== OPERADORES RELACIONALES ===");
         System.out.println("a > b: " + (a > b));

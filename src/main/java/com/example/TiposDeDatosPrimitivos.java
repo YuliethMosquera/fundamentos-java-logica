@@ -37,4 +37,30 @@ public class TiposDeDatosPrimitivos {
         System.out.println("\n=== BOOLEANOS ===");
         System.out.println("¿Es mayor de edad?: " + esMayorDeEdad);
     }
+
+    public static void demostrarValoresPorDefecto() {
+        byte valorByte = 0;        
+        short valorShort = 0;       
+        int valorInt = 0;           
+        long valorLong = 0L;        
+        float valorFloat = 0.0f;    
+        double valorDouble = 0.0;   
+        char valorChar = '\u0000';  
+        boolean valorBoolean = false; 
+
+        System.out.println("=== VALORES POR DEFECTO DE TIPOS PRIMITIVOS ===");
+        System.out.println("byte: " + valorByte);
+        System.out.println("short: " + valorShort);
+        System.out.println("int: " + valorInt);
+        System.out.println("long: " + valorLong);
+        System.out.println("float: " + valorFloat);
+        System.out.println("double: " + valorDouble);
+        System.out.println("char: '" + valorChar + "'");
+        System.out.println("boolean: " + valorBoolean);
+    }
+
+    public static void main(String[] args) {
+
+        TiposDeDatosPrimitivos.demostrarValoresPorDefecto();
+    }
 }

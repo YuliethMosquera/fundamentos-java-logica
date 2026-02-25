@@ -5,11 +5,26 @@ import java.util.Scanner;
 
 public class ManejoBasicoExcepciones {
 
+    public static void main(String[] args) {
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Ingresa un número: ");
+            int numero = sc.nextInt();
+            System.out.println("Número ingresado: " + numero);
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+
+        ejemploTryCatchDivision();
+        ejemploTryCatchInput();
+        ejemploBloqueFinally();
+        evitarCierrePrograma();
+    }
+
     public static void ejemploTryCatchDivision() {
-        System.out.println("=== TRY-CATCH DIVISIÓN ===");
+        System.out.println("\n=== TRY-CATCH DIVISIÓN ===");
         try {
             int a = 10;
-            int b = 0; 
+            int b = 0;
             int resultado = a / b;
             System.out.println("Resultado: " + resultado);
         } catch (ArithmeticException e) {
@@ -19,8 +34,7 @@ public class ManejoBasicoExcepciones {
 
     public static void ejemploTryCatchInput() {
         System.out.println("\n=== TRY-CATCH INPUT ===");
-        Scanner sc = new Scanner(System.in);
-        try {
+        try (Scanner sc = new Scanner(System.in)) {
             System.out.print("Ingresa un número entero: ");
             int numero = sc.nextInt();
             System.out.println("Número ingresado: " + numero);
@@ -31,8 +45,7 @@ public class ManejoBasicoExcepciones {
 
     public static void ejemploBloqueFinally() {
         System.out.println("\n=== BLOQUE FINALLY ===");
-        Scanner sc = new Scanner(System.in);
-        try {
+        try (Scanner sc = new Scanner(System.in)) {
             System.out.print("Ingresa un número: ");
             int num = sc.nextInt();
             System.out.println("Número: " + num);
@@ -47,7 +60,7 @@ public class ManejoBasicoExcepciones {
         System.out.println("\n=== EVITAR CIERRE DEL PROGRAMA ===");
         try {
             String texto = null;
-            System.out.println(texto.length()); 
+            System.out.println(texto.length());
         } catch (Exception e) {
             System.out.println("Se capturó un error y el programa continúa.");
         }
